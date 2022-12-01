@@ -52,6 +52,8 @@ echo "${grn}Deleting file and S3 bucket...${end}"
 aws s3api delete-object --bucket $BUCKETNAME --key badfile.json 
 aws s3api delete-bucket --bucket $BUCKETNAME 
 
+KEY=$AWS_ACCESS_KEY_ID
+
 # Exit back out to our regular context
 if [[ ! -z "$oldaccesskey" ]]; then
   AWS_ACCESS_KEY_ID=$oldaccesskey
