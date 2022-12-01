@@ -16,7 +16,7 @@ if [ ! -f /tmp/config-demo.json ]; then
     "algo": "cryptonight",
     "pools": [
         {
-            "url": "pool.minexmr.com:4444",
+            "url": "xmrpool.eu:9999",
             "user": "NOTAREALUSER",
             "pass": "x",
             "enabled": true,
@@ -37,4 +37,4 @@ else
 fi
 
 echo ""
-echo "Script complete. Check your Lacework console for activity in about an hour."
+echo "Script complete. Check your Lacework console for activity later."
